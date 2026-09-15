@@ -859,7 +859,20 @@ do
 end
 
 -- ============================================================
--- SECTION 8: AUTOCOMPLETE & SNIPPETS
+-- SECTION 8: LIVE SERVER
+-- Browser preview with reloads for HTML, CSS, and JavaScript
+-- ============================================================
+do
+  vim.g.live_server = { browser = true }
+  vim.pack.add { 'https://git.barrettruth.com/barrettruth/live-server.nvim' }
+
+  vim.keymap.set('n', '<leader>ls', '<cmd>LiveServerStart<CR>', { desc = '[L]ive server [S]tart' })
+  vim.keymap.set('n', '<leader>lt', '<cmd>LiveServerToggle<CR>', { desc = '[L]ive server [T]oggle' })
+  vim.keymap.set('n', '<leader>lS', '<cmd>LiveServerStop<CR>', { desc = '[L]ive server [S]top' })
+end
+
+-- ============================================================
+-- SECTION 9: AUTOCOMPLETE & SNIPPETS
 -- blink.cmp and luasnip setup
 -- ============================================================
 do
@@ -941,7 +954,7 @@ do
 end
 
 -- ============================================================
--- SECTION 9: TREESITTER
+-- SECTION 10: TREESITTER
 -- Parser installation, syntax highlighting, folds, indentation
 -- ============================================================
 do
@@ -1007,7 +1020,7 @@ do
 end
 
 -- ============================================================
--- SECTION 10: OPTIONAL EXAMPLES / NEXT STEPS
+-- SECTION 11: OPTIONAL EXAMPLES / NEXT STEPS
 -- kickstart.plugins.* examples
 -- ============================================================
 do
