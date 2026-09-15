@@ -803,7 +803,8 @@ do
   -- You can press `g?` for help in this menu.
   local ensure_installed = vim.tbl_keys(servers or {})
   vim.list_extend(ensure_installed, {
-    -- You can add other tools here that you want Mason to install
+    -- Formatter used by Conform for JavaScript, TypeScript, and Vue files.
+    'eslint_d',
   })
 
   require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -840,6 +841,11 @@ do
     },
     -- You can also specify external formatters in here.
     formatters_by_ft = {
+      javascript = { 'eslint_d' },
+      javascriptreact = { 'eslint_d' },
+      typescript = { 'eslint_d' },
+      typescriptreact = { 'eslint_d' },
+      vue = { 'eslint_d' },
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
