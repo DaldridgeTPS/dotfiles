@@ -745,6 +745,9 @@ do
     -- rust_analyzer = {},
 
     stylua = {}, -- Used to format Lua code
+    html = {},
+    cssls = {},
+    emmet_language_server = {},
 
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
