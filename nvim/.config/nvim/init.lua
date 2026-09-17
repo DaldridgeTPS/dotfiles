@@ -251,6 +251,16 @@ do
     group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
     callback = function() vim.hl.on_yank() end,
   })
+
+  vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'html', 'css' },
+    callback = function(event)
+      vim.bo[event.buf].expandtab = true
+      vim.bo[event.buf].shiftwidth = 2
+      vim.bo[event.buf].softtabstop = 2
+      vim.bo[event.buf].tabstop = 2
+    end,
+  })
 end
 
 -- ============================================================
