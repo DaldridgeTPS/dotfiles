@@ -439,6 +439,11 @@ do
     styles = {
       comments = {}, -- Disable italics in comments
     },
+    custom_highlights = function(colors)
+      return {
+        MatchParen = { bg = colors.peach, fg = colors.base, style = { 'bold' } },
+      }
+    end,
   }
 
   -- Load the colorscheme here.
