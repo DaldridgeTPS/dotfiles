@@ -767,6 +767,7 @@ do
     html = {},
     cssls = {},
     emmet_language_server = {},
+    tailwindcss = {},
 
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
