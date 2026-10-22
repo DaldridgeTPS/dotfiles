@@ -1,0 +1,7 @@
+onboarding = false
+
+[keys]
+switch_tab = "ctrl+1..9"
+
+[ui]
+status_indicators = "symbols"
