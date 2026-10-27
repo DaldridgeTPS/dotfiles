@@ -3,6 +3,9 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fnm env --use-on-cd)"
 
+# Visual Studio Code CLI
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
 alias lg="lazygit"
 
 # pnpm
