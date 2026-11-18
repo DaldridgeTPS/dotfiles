@@ -1,5 +1,5 @@
 {
   "title": "New Four-Tab Space",
   "place": "none",
-  "overlay": { "kind": "popup", "at": "top", "width": 280, "height": 48 }
+  "overlay": { "kind": "dialog", "width": 620, "height": 330 }
 }
